@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Theme">
+        <SwitchPreferenceCompat
+            app:allowDividerBelow="true"
+            app:defaultValue="false"
+            app:iconSpaceReserved="false"
+            app:key="darkmode"
+            app:summary="Enable dark mode "
+            app:title="Dark Mode" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Feedback">
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="send_feedback"
+            app:summary="Report technical issues or suggest new features"
+            app:title="Send Feedback" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
