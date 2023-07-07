@@ -8,7 +8,7 @@ public class Constants {
 
     public static final String GET_MOVIE_DETAIL_BY_emsVersionId = "movies/detail";
     public static final String API_KEY_HEADER = "X-RapidAPI-Key";
-    public static final String API_VALUE_HEADER = "f6ff8d6985msh3653fe0ae813bb8p12db8cjsn6cf18eaee83a";
+    public static final String API_VALUE_HEADER = "586df4672emshdd4ef747f199e1ap1402cfjsn793cb62c0c3f";
     public static final String API_HOST_KEY_HEADER = "X-RapidAPI-Host";
     public static final String API_HOST_VALUE_HEADER = "flixster.p.rapidapi.com";
 

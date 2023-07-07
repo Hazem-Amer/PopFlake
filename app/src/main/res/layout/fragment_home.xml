@@ -18,7 +18,8 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
+
+                android:layout_margin="10dp"
                 android:background="@color/white"
                 android:text="Explore the world of movies !"
                 android:textStyle="bold"
@@ -30,9 +31,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_marginStart="10dp"
                 android:text="Coming Soon"
-                android:textSize="20sp" />
+                android:textStyle="bold"
+                android:textSize="25sp" />
 
 
             <com.google.android.material.card.MaterialCardView
@@ -64,6 +69,7 @@
                     android:id="@+id/comingSoonMovies_RV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:orientation="horizontal"
                     android:scrollbarSize="0dp"
                     android:scrollbars="horizontal"
@@ -76,9 +82,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="In Theaters"
-                android:textSize="20sp" />
+                android:layout_margin="10dp"
+                android:text="Opening"
+                android:textStyle="bold"
+                android:textSize="25sp" />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
@@ -95,13 +102,10 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <include layout="@layout/shimmer_layout" />
+                        <include layout="@layout/opening_movie_listitem_shimmer"/>
+                        <include layout="@layout/opening_movie_listitem_shimmer"/>
+                        <include layout="@layout/opening_movie_listitem_shimmer"/>
 
-                        <include layout="@layout/shimmer_layout" />
-
-                        <include layout="@layout/shimmer_layout" />
-
-                        <include layout="@layout/shimmer_layout" />
                     </LinearLayout>
                 </com.facebook.shimmer.ShimmerFrameLayout>
 
@@ -109,11 +113,12 @@
                     android:id="@+id/openingMovies_RV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:orientation="horizontal"
                     android:scrollbars="horizontal"
                     android:visibility="gone"
                     app:layoutManager="LinearLayoutManager"
-                    tools:listitem="@layout/movie_list_item" />
+                    tools:listitem="@layout/opening_movie_list_item" />
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
     </ScrollView>
